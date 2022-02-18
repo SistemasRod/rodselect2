@@ -1,5 +1,7 @@
 $(document).ready(function(){
-    
+    let anchoVentana = window.innerWidth;
+    let menu = $("#menu > ul");
+    let estado = true;    
     ScrollReveal().reveal('#nosotros',{delay: 500, easing: 'ease-in' });
     ScrollReveal().reveal('#marcas',{delay: 500, easing: 'ease-in' });
     ScrollReveal().reveal('#beneficios',{delay: 500, easing: 'ease-in' });
@@ -15,19 +17,29 @@ $(document).ready(function(){
         auto: true,
         
     });
-
-    var estado = true;
-    $('#menu-btn').click(function(){
-        let menu = $('#menu > ul');
-        if(estado == false){
-            menu.hide();
-            estado = !estado;
-        }else{
-            menu.show();
-            estado = !estado;
+    $("#menu-btn").click(function () {
+        if (estado == false) {
+          menu.hide();
+          estado = !estado;
+        } else {
+          menu.showFlex();
+          estado = !estado;
         }
-    });
-
+      });
+    
+      $.fn.showFlex = function () {
+        this.css("display", "flex");
+      };
+    
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 739 ) {
+          menu.showFlex();
+        }
+        if (window.innerWidth < 738 ) {
+            menu.hide();
+    
+        }
+      });
     
     $('#enviar').click(function(e){
         e.preventDefault();
