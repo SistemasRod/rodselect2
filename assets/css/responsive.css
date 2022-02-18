@@ -57,21 +57,32 @@
 
 @media(max-width:1200px){
     #beneficios{
+        padding-top: 10px;
+        position: relative;
         width: 100%;
         grid-template-areas: "imagen"
                              "lista";
     }
+    #benficios h1{
+        padding: 0.7em;
+    }
     #beneficios img{
-        position: relative;
+        position: absolute;
         width: 1000px;
+        top: 10%;
+        height: 90%;
     }
     #beneficios .lista-ordenada{
-        position: absolute;
+        margin: 0;
         place-self: center;
         background: rgba(240, 240, 240, 0.5);
-        width: 70%;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
     }
     .listaol{
+        width: 100%;
         display: grid;
         place-content: center;
         text-align: center;
@@ -97,7 +108,7 @@
     }
     #beneficios img{
         
-        width: 95%;
+        width: 100%;
         
     }
     #carouselExampleCaptions{
@@ -107,7 +118,7 @@
 @media(max-width:845px){
     #menu{
         position: relative;
-        justify-content: space-between;
+        
     }
     #menu ul li a{
         font-size: 20px;
@@ -155,18 +166,27 @@
 @media(max-width: 670px){
     
     #primario{
+        padding-top: 0;
         width: 100%;
         height: 90%;
         background: rgba(150, 150, 150, 0.8);
     }
     #logorod{
-        width: 40%;
+        width: 50%;
+    }
+    .formulario,form{
+        width: 100%;
+        padding: 1.4em;
     }
     .formulario form h1{
-        font-size: 20px;
+        font-size: 1.3em;
     }
     form label{
-        font-size: 20px;
+        font-size: 1.3em;
+    }
+    #form input{
+        padding: 0.6em 1.2em;
+        font-size:  1em
     }
     
     #img-mesa-trabajo{
@@ -205,7 +225,6 @@
         padding: 0em 0em 0em 0em;
     }
     #beneficios .lista-ordenada{
-        position: absolute;
         place-self: center;
         width: 95%;
     }
@@ -235,7 +254,17 @@
 }
 @media(max-width: 430px){
     section{
-        margin-bottom: 80px;
+        margin-bottom: 50px;
+    }
+    #nosotros{
+        margin-bottom: 250px;
+    }
+    #marcas,
+    #beneficios,
+    #proyectos_especiales
+    {
+        margin-bottom: 10px;
+        padding: 12px;
     }
     .listaol li h4{
         font-size: 15px;
@@ -246,5 +275,14 @@
 
     #pie{
         font-size: 15px;
+    }
+    @media(max-width: 320px){
+        #marcas,
+        #beneficios,
+        #proyectos_especiales
+    {
+        margin-bottom: 50px;
+        padding: 10px;
+    }
     }
 }
