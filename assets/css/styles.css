@@ -1,0 +1,366 @@
+#cabecera{
+    width: 100%;
+    margin-bottom: 5px;
+}
+#menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+    background: rgba(240, 240, 240, 0.95);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+#menu > ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    
+    margin: 20px;
+    margin-left: 20px;
+    transition: all 300ms;
+}
+
+#menu ul li a:hover{
+    font-size: 25px;
+    text-decoration: underline;
+    text-shadow: 0px 0px 1px black;
+}
+
+
+#banner-principal{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 990px;
+    background: url(../img/principal/banner_principalv3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+#primario{
+    width: 50%;
+    height: 95%;
+    background: rgba(150, 150, 150, 0.9);
+    
+}
+#registro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-top: 100px;
+}
+#logorod{
+    width: 300px;
+}
+.formulario{
+    width: 80%;
+    margin-top: 25px;
+}
+form{
+    display: flex;
+    flex-flow: column;
+    
+}
+form label{
+    font-size: 25px;
+}
+
+label, input, button{
+    margin: 10px;
+}
+
+form a{
+    margin: 10px;
+    text-decoration: none;
+    transition: all 300ms;
+}
+form a:hover{
+    text-decoration: underline;
+}
+
+#nosotros{
+    display: grid;
+    grid-template-areas: "imagen desc";
+    margin-top: 40px;
+}
+
+#img-mesa-trabajo{
+    grid-area: imagen;
+    width: 90%;
+    place-content: center;
+}
+#descripcion-mesa{
+    display: grid;
+    grid-area: desc;
+    font-size: 20px;
+    place-content: center;
+}
+
+#descripcion-mesa h3{
+    font-size: 35px;
+}
+#descripcion-mesa ul li{
+    margin-top: 10px;
+}
+#descripcion-mesa ul li:hover{
+    text-decoration: underline;
+}
+
+#marcas{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+#marcas h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+#marcas img{
+    width: 20%;
+    
+    transition: all 300ms;
+}
+#marcas img:hover{
+    transform: scale(1.1);
+}
+#marcas .img-dist{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#marcas .img-dist img{
+    width: 15%;
+    margin: 15px;
+}
+
+#productos{
+    display: none;
+    
+    place-content: center;
+    
+}
+#slider h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+.bx-wrapper{
+    width: 1000px;
+}
+
+
+
+.lista-ordenada h3{
+    font-size: 45px;
+    text-align: center;
+}
+
+.listaol {
+    counter-reset: li; 
+    list-style: none; 
+    *list-style: decimal; 
+    font-size: 25px;
+    padding: 0;
+    padding-left: 50px;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.listaol ol {
+    margin: 0 0 0 2em; 
+}
+
+.listaol li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;   
+}
+
+#beneficios{
+    display: grid;
+    grid-template-areas: "imagen lista";
+    place-content: center;
+    margin-top: 40px;
+}
+#beneficios img{
+    grid-area: imagen;
+}
+.lista-ordenada{
+    grid-area: lista;
+    margin-top: -30px;
+}
+
+.listaol li:hover{
+    background: #eee;
+}
+
+.listaol li:hover:before{
+    background: #ddd;
+}
+
+.listaol li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #eeeeee;
+    height: 2em;
+    width: 2em;
+    line-height: 1.5em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+
+.listaol li h4{
+    font-size: 25px;
+    margin: 0px;
+}
+
+#proyectos_especiales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+#proyectos_especiales h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+#tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tarjeta{
+    width: 450px;
+    margin: 15px;
+    transition: all 300ms;
+}
+.tarjeta:hover{
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.7);
+}
+
+#slider-proyectos{
+    display: grid;
+    place-items: center;
+}
+#carouselExampleCaptions{
+    max-width: 65%;
+    border-radius: 10px;
+    transition: all 300ms;
+}
+#carouselExampleCaptions:hover{
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.7);
+}
+#carouselExampleCaptions img{
+    border-radius: 10px;
+    width: 100%;
+}
+#carouselExampleCaptions h5, #carouselExampleCaptions p{
+    color: black;
+}
+
+#clientes{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+#clientes h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+#clientes p{
+    font-size: 24px;
+}
+#clientes img{
+    transition: all 300ms;
+}
+#clientes img:hover{
+    transform: scale(1.1);
+}
+#clientes .img-client{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#clientes .img-client img{
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#pie{
+    /*background: #C6BFC2;*/
+    background: url(../img/principal/white_carbon.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+#pie a{
+    text-decoration: none;
+    color: black;
+}
+#encabezado-pie{
+    margin: 20px;
+}
+#encabezado-pie .iconos{
+    display: flex;
+    justify-content: space-around;
+}
+#encabezado-pie i{
+    font-size: 3em;
+}
+
+#info{
+    margin: 20px;
+    text-align: center;
+}
+#redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.network{
+    display: flex;
+    justify-content: space-around;
+}
+
+.network a{
+    font-size: 3em;
+    transition: all 300ms;
+}
+.network a:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,250 @@
+@media(max-width:1440px){
+    #descripcion-mesa{
+        font-size: 15px;
+        
+    }
+    
+    #descripcion-mesa h3{
+        font-size: 25px;
+    }
+    #beneficios img{
+        width: 95%;
+    }
+    .listaol{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:1350px){
+    .listaol{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:1270px){
+    #primario{
+        height: 78%;
+    }
+    
+
+    #nosotros{
+        grid-template-areas: "imagen"
+                              "desc";
+        place-items: center;
+    }
+    #img-mesa-trabajo{
+        grid-area: imagen;
+        width: 90%;
+        position: relative;
+    }
+    #descripcion-mesa{
+        display: grid;
+        width: 80%;
+        grid-area: desc;
+        font-size: 20px;
+        position: absolute;
+        place-items: center;
+        background: rgba(240, 240, 240, 0.8);
+    }
+    #descripcion-mesa h3{
+        display: grid;
+        text-align: center;
+    }
+    #clientes p{
+        text-align: center;
+    }
+}
+
+@media(max-width:1200px){
+    #beneficios{
+        width: 100%;
+        grid-template-areas: "imagen"
+                             "lista";
+    }
+    #beneficios img{
+        position: relative;
+        width: 1000px;
+    }
+    #beneficios .lista-ordenada{
+        position: absolute;
+        place-self: center;
+        background: rgba(240, 240, 240, 0.5);
+        width: 70%;
+    }
+    .listaol{
+        display: grid;
+        place-content: center;
+        text-align: center;
+    }
+}
+
+@media(max-width:1000px){
+    #banner-principal{
+        background-size: 200%;
+    }
+    #primario{
+        width: 60%;
+        height: 100%;
+    }
+    #marcas img{
+        width: 25%;
+    }
+    #marcas .img-dist img{
+        width: 25%;
+    }
+    #beneficios{
+        place-items: center;
+    }
+    #beneficios img{
+        
+        width: 95%;
+        
+    }
+    #carouselExampleCaptions{
+        max-width: 80%;
+    }
+}
+@media(max-width:845px){
+    #menu{
+        position: relative;
+        justify-content: space-between;
+    }
+    #menu ul li a{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:800px){
+    #clientes .img-client img{
+        width: 30%;
+    }
+}
+
+@media(max-width:739px){
+    #menu{
+        flex-direction: column;
+    }
+    #menu #menu-btn{
+        display: flex;
+        justify-content: end;
+        margin: 5px;
+
+    }
+    #menu > ul{
+        display: none;
+        flex-direction: column;
+    }
+    #descripcion-mesa{
+        font-size: 15px;
+    }
+    #descripcion-mesa h3{
+        font-size: 20px;
+    }
+
+    .lista-ordenada h3{
+        font-size: 25px;
+    }
+    .listaol{
+        font-size: 13px;
+    }
+    .listaol li h4{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 670px){
+    
+    #primario{
+        width: 100%;
+        height: 90%;
+        background: rgba(150, 150, 150, 0.8);
+    }
+    #logorod{
+        width: 40%;
+    }
+    .formulario form h1{
+        font-size: 20px;
+    }
+    form label{
+        font-size: 20px;
+    }
+    
+    #img-mesa-trabajo{
+        width: 100%;
+    }
+    #descripcion-mesa{
+        width: 100%;
+    }
+
+    #marcas img{
+        width: 30%;
+    }
+    #marcas .img-dist{
+        justify-content: space-evenly;
+    }
+    #marcas .img-dist img{
+        width: 30%;
+    }
+
+    #beneficios .lista-ordenada{
+        background: rgba(240, 240, 240, 0.5);
+        width: 90%;
+    }
+    #carouselExampleCaptions{
+        max-width: 95%;
+    }
+    #clientes h2{
+        font-size: 30px;
+    }
+    #clientes p{
+        font-size: 20px;
+    }
+}
+@media(max-width: 600px){
+    .listaol li{
+        padding: 0em 0em 0em 0em;
+    }
+    #beneficios .lista-ordenada{
+        position: absolute;
+        place-self: center;
+        width: 95%;
+    }
+}
+
+@media(max-width: 500px){
+    #proyectos_especiales{
+        margin-top: 60px;
+    }
+    #proyectos_especiales h3{
+        font-size: 35px;
+        
+    }
+    #tarjetas{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .tarjeta{
+        width: 90%;
+        
+    }
+    section{
+        margin-bottom: 50px;
+    }
+}
+@media(max-width: 430px){
+    section{
+        margin-bottom: 80px;
+    }
+    .listaol li h4{
+        font-size: 15px;
+    }
+    .lista-ordenada h3{
+        margin-top: 20px;
+    }
+
+    #pie{
+        font-size: 15px;
+    }
+}
